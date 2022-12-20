@@ -77,8 +77,8 @@ img{
 
   input{
     position: absolute;
-  left: 620px;
-  top: 445px;  
+    left: 40%;
+    top:60%; 
     width: 20%;
     height: 32px;
     color: #ffffff;
