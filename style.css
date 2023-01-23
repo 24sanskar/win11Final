@@ -95,3 +95,12 @@ img{
   input:focus{
     outline: none; 
 }
+
+.hint {
+  position: absolute;
+  left: 46%;
+  bottom: 29%;
+  color: rgba(128, 128, 128, 0.646);
+  letter-spacing: 2px;
+}
+
