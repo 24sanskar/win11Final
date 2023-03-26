@@ -1,9 +1,15 @@
-
-body{
+body {
   margin: 0;
   padding: 0;
-  background-color: #020F23;
+}
 
+.main {
+  background: url("win.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .spinner {
@@ -12,95 +18,85 @@ body{
   /* position: relative; */
   position: absolute;
   left: 740px;
-  top: 520px; 
+  bottom: 20%;
 }
 
- .spinner .dot {
+.spinner .dot {
   position: absolute;
   inset: 0;
   display: flex;
   justify-content: center;
- }
- 
- .spinner .dot::after {
+}
+
+.spinner .dot::after {
   content: "";
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background-color: #ffffff;
- }
- 
- @keyframes spin {
-  to {
-   transform: rotate(360deg);
-  }
- }
- 
- .spinner .dot {
-  animation: spin 2s infinite;
- }
- 
- .spinner .dot:nth-child(2) {
-  animation-delay: 100ms;
- }
- 
- .spinner .dot:nth-child(3) {
-  animation-delay: 200ms;
- }
- 
- .spinner .dot:nth-child(4) {
-  animation-delay: 300ms;
- }
- 
- .spinner .dot:nth-child(5) {
-  animation-delay: 400ms;
- }
+}
 
- #message{
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner .dot {
+  animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+#message {
   position: absolute;
   left: 710px;
-  top: 575px; 
+  bottom: 10%;
   color: #ffffff;
   font-size: 1.7rem;
-  letter-spacing: .2rem;
- }
-
-img{
-  width: 100vw;
-  height: 100vh;
-  background-position: center; 
-  background-size: cover;
- background-repeat: no-repeat;
-
+  letter-spacing: 0.2rem;
+  display: none;
 }
 
-
-  input{
-    position: absolute;
-    left: 40%;
-    top:60%; 
-    width: 20%;
-    height: 32px;
-    color: #ffffff;
-    background-color: rgba(34, 31, 31, 0.836);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #4A0508 3.5px;
-    border-radius: 5px;
-    box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.4);
-    letter-spacing: 10px;
-  }
-  
-  input:focus{
-    outline: none; 
+input {
+  position: absolute;
+  left: 40%;
+  top: 60%;
+  width: 20%;
+  height: 32px;
+  color: #ffffff;
+  background-color: rgba(34, 31, 31, 0.836);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #4a0508 3.5px;
+  border-radius: 5px;
+  box-shadow: -5px -5px 10px rgba(128, 128, 128, 0.4);
+  letter-spacing: 10px;
 }
 
-.hint {
+input:focus {
+  outline: none;
+}
+
+#hint {
   position: absolute;
   left: 46%;
-  bottom: 29%;
+  bottom: 28%;
   color: rgba(128, 128, 128, 0.646);
   letter-spacing: 2px;
 }
-
